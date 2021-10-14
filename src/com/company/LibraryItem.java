@@ -4,34 +4,32 @@ public abstract class LibraryItem {
     ////////////////Attributes/////////////////
     private String genre;
     private String title;
-    private Integer pages;
+//    private Integer pages;
 
     ////////////////Constructor////////////////
-    public LibraryItem(String genre, String title, Integer pages) {
-        this.genre = genre;
+    public LibraryItem(String title, String genre) {
         this.title = title;
-        this.pages = pages;
+        this.genre = genre;
+
     }
+
+
 
     ////////////////Methods///////////////
     public void book(){
         System.out.println("I am a book");
     }
 
-    public Integer getPages(Integer pages) {
-        return pages;
-    }
+    public LibraryItem() {
 
-//    public Integer setPages(Integer pages) {
-//        this.pages = pages;
-//    }
-
-    public String getTitle() {
-        return title;
     }
 
     public void setTitle(String title) {
         this.title = title;
+    }
+
+    public String getTitle() {
+        return title;
     }
 
     public String getGenre() {
@@ -41,7 +39,5 @@ public abstract class LibraryItem {
     public void setGenre(String genre) {
         this.genre = genre;
     }
-
-
 
 }

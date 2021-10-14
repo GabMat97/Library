@@ -1,9 +1,28 @@
 package com.company;
 
 public class Fantasy extends LibraryItem {
-    public Fantasy(String name) {
-        super(name);
+    private String title;
+    private String genre;
+
+    public Fantasy(String title, String genre) {
+        super();
+        this.title = title;
+        this.genre = genre;
     }
+
+    public void setGenre(String genre) {
+        this.genre = genre;
+    }
+    public String getGenre() {
+        return genre;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
     @Override
-    public void
+    public String getTitle() {
+        return title;
+    }
 }
