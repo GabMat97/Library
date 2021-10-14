@@ -1,11 +1,11 @@
 package com.company;
-public abstract class Library {
+public abstract class LibraryItem {
 
     ////////////////Attributes/////////////////
     private String name;
 
     ////////////////Constructor////////////////
-    public Library(String name) {
+    public LibraryItem(String name) {
         this.name = name;
     }
 
